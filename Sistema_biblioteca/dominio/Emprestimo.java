@@ -13,24 +13,15 @@ public class Emprestimo {
         this.dataDevolucao = dataDevolucao;
     }
 
-    public Livro getLivro() {
-        return livro;
-    }
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public Date getDataEmprestimo() {
-        return dataEmprestimo;
-    }
-
-    public Date getDataDevolucao() {
-        return dataDevolucao;
-    }
+    // Getters e toString
+    public Livro getLivro() { return livro; }
+    public Usuario getUsuario() { return usuario; }
+    public Date getDataEmprestimo() { return dataEmprestimo; }
+    public Date getDataDevolucao() { return dataDevolucao; }
 
     @Override
     public String toString() {
-        return "Livro: " + livro.getTitulo() + ", Usuario: " + usuario.getNome() + ", Data Empréstimo: " + dataEmprestimo + ", Data Devolução: " + dataDevolucao;
+        return "Livro: " + livro.getTitulo() + ", Usuario: " + usuario.getNome() + 
+               ", Data Empréstimo: " + dataEmprestimo + ", Data Devolução: " + dataDevolucao;
     }
 }

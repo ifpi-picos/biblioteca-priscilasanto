@@ -13,33 +13,17 @@ public class Livro {
         this.emprestado = false;
     }
 
-    public String getAutor() {
-        return autor;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public int getAno() {
-        return ano;
-    }
-
-    public boolean isEmprestado() {
-        return emprestado;
-    }
-
-    public void setEmprestado(boolean emprestado) {
-        this.emprestado = emprestado;
-    }
+    // Getters, setters e toString
+    public String getAutor() { return autor; }
+    public String getTitulo() { return titulo; }
+    public String getEndereco() { return endereco; }
+    public int getAno() { return ano; }
+    public boolean isEmprestado() { return emprestado; }
+    public void setEmprestado(boolean emprestado) { this.emprestado = emprestado; }
 
     @Override
     public String toString() {
-        return "Título: " + titulo + ", Autor: " + autor + ", Ano: " + ano + ", Endereço: " + endereco + ", Emprestado: " + (emprestado ? "Sim" : "Não");
+        return "Título: " + titulo + ", Autor: " + autor + ", Ano: " + ano + 
+               ", Endereço: " + endereco + ", Emprestado: " + (emprestado ? "Sim" : "Não");
     }
 }
-
