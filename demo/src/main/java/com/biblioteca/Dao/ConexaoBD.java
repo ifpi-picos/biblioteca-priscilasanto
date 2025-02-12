@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoBD {
-    private final String url = "jdbc:postgresql://localhost:5432/biblioteca";
+    private final String url = "jdbc:postgresql://localhost:5433/biblioteca"; // Verifique se a porta e o nome do banco de dados estão corretos
     private final String usuario = "postgres";
-    private final String senha = "postgres";
+    private final String senha = "Aluno520?";
 
     public Connection conectarBanco(){
         try {
@@ -18,7 +18,7 @@ public class ConexaoBD {
                 return connection;
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.err.println("Erro ao conectar ao banco de dados: " + e.getMessage());
         }
         return null;
     }
