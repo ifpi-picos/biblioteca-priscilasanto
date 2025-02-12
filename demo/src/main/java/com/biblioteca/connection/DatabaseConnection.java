@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnection {
-  private static final String URL = "jdbc:postgresql://localhost:5433/biblioteca"; // Verifique se a porta e o nome do banco de dados estão corretos
+  private static final String URL = "jdbc:postgresql://localhost:5432/biblioteca"; // Verifique se a porta e o nome do banco de dados estão corretos
   private static final String USER = "postgres";
   private static final String PASSWORD = "Aluno520?";
 
