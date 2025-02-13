@@ -71,6 +71,7 @@ public class App {
 
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
+                    break;
             }
         }
     }
